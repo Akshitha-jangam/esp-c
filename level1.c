@@ -1,4 +1,4 @@
-//1)Question: Get a number from user and add 2 to that number and print the result.
+//Question: Get a number from user and add 2 to that number and print the result.
 //Example: Input :45 Output 47. Input:56789 Output:56791
 
 #include <stdio.h>
@@ -10,7 +10,7 @@ int main() {
    printf("the number is: %d",b);
 }
 
-//2)Question: Get a number from user and subtract 5 to that number and print the result.
+//Question: Get a number from user and subtract 5 to that number and print the result.
 //Example: Input :45 Output 40. Input:56789 Output:56784
 #include<stdio.h>
 int main()
@@ -23,7 +23,7 @@ int main()
 }
 
 
-//3)Question: Get a number from user and multiply 3 to that number and print the result.
+//Question: Get a number from user and multiply 3 to that number and print the result.
 //Example: Input: 45 Output 135. Input: 1200 Output: 3600
 #include<stdio.h>
 int main()
@@ -36,7 +36,7 @@ int main()
 }
 
 
-//4)Question: Get a number from user and divide by the number by 6 and print the quotient.
+//Question: Get a number from user and divide by the number by 6 and print the quotient.
 //Example: Input: 45 Output 7. Input: 143 Output: 23
 #include<stdio.h>
 int main()
@@ -49,7 +49,7 @@ int main()
 }
 
 
-//5)Question: Get a number from user and divide by the number by 8 and print the remainder.
+//Question: Get a number from user and divide by the number by 8 and print the remainder.
 //Example: Input: 45 Output 5. Input: 143 Output: 7
 #include<stdio.h>
 int main()
@@ -62,7 +62,7 @@ int main()
 }
 
 
-//6)Question: Get a two-digit number from user and print the one’s digit.
+//Question: Get a two-digit number from user and print the one’s digit.
 //Example: Input: 45 Output 5. Input: 56 Output: 6
 #include<stdio.h>
 int main()
@@ -75,7 +75,7 @@ int main()
 }
 
 
-//7)Question: Get a two-digit number from user and print the ten’s digit.
+//Question: Get a two-digit number from user and print the ten’s digit.
 //Example: Input: 45 Output 4. Input: 56 Output: 5
 #include<stdio.h>
 int main()
@@ -88,7 +88,7 @@ int main()
 }
 
 
-//8)Question: Get a three-digit number from user and print the one’s digit.
+//Question: Get a three-digit number from user and print the one’s digit.
 //Example: Input: 456 Output 6. Input: 569 Output: 9
 #include<stdio.h>
 int main()
@@ -101,7 +101,7 @@ int main()
 }
 
 
-//9)Question: Get a three-digit number from user and print the hundred’s digit.
+//Question: Get a three-digit number from user and print the hundred’s digit.
 //Example: Input: 456 Output 4. Input: 569 Output: 5
 #include<stdio.h>
 int main()
@@ -114,7 +114,7 @@ int main()
 }
 
 
-//10)Question: Get a three-digit number from user and print the ten’s digit.
+//Question: Get a three-digit number from user and print the ten’s digit.
 //Example: Input: 456 Output 5. Input: 569 Output: 6
 #include<stdio.h>
 int main()
@@ -128,7 +128,7 @@ int main()
 }
 
 
-//11)Question: Get a two-digit number from user and print sum the digits.
+//Question: Get a two-digit number from user and print sum the digits.
 //Example: Input: 56 Output 11. Input: 69 Output: 15
 #include <stdio.h>
 int main()
@@ -145,7 +145,7 @@ int main()
 }
 
 
-//12)Question: Get a three-digit number from user and print sum the digits.
+//Question: Get a three-digit number from user and print sum the digits.
 //Example: Input: 562 Output 13. Input: 469 Output: 19
 #include<stdio.h>
 int main()
@@ -166,5 +166,5 @@ int main()
 }
 
 
-//13)Question: Get a two-digit number from user and print the reverse of the number.
+//Question: Get a two-digit number from user and print the reverse of the number.
 //Example: Input: 56 Output 65. Input: 59 Output: 95
