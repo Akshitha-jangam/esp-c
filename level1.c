@@ -9,6 +9,8 @@ int main() {
    b=a+2;
    printf("the number is: %d",b);
 }
+//=========================================================================================================================
+
 
 //2)Question: Get a number from user and subtract 5 to that number and print the result.
 //Example: Input :45 Output 40. Input:56789 Output:56784
@@ -34,6 +36,7 @@ int main()
     b=a*3;
     printf("the number is %d",b);
 }
+//=========================================================================================================================
 
 
 //4)Question: Get a number from user and divide by the number by 6 and print the quotient.
@@ -47,6 +50,7 @@ int main()
     b=a/6;
     printf("the quotient is %d",b);
 }
+//=========================================================================================================================
 
 
 //5)Question: Get a number from user and divide by the number by 8 and print the remainder.
@@ -60,6 +64,7 @@ int main()
    b=a%8;
    printf("the remainder is %d",b);
 }
+//=========================================================================================================================
 
 
 //6)Question: Get a two-digit number from user and print the one’s digit.
@@ -73,6 +78,7 @@ int main()
    b=a%10;
    printf("the one's digit is %d",b);
 }
+//=========================================================================================================================
 
 
 //7)Question: Get a two-digit number from user and print the ten’s digit.
@@ -86,6 +92,7 @@ int main()
     b=a/10;
     printf("the ten's digit is %d",b);
 }
+//=========================================================================================================================
 
 
 //8)Question: Get a three-digit number from user and print the one’s digit.
@@ -99,6 +106,7 @@ int main()
     b=a%10;
     printf("the one's digit is %d",b);
 }
+//=========================================================================================================================
 
 
 //9)Question: Get a three-digit number from user and print the hundred’s digit.
@@ -112,6 +120,7 @@ int main()
     b=a/100;
     printf("the hundred's digit is %d",b);
 }
+//=========================================================================================================================
 
 
 //10)Question: Get a three-digit number from user and print the ten’s digit.
@@ -126,6 +135,7 @@ int main()
   c=b%10;
   printf("the ten's digit is %d",c);
 }
+//=========================================================================================================================
 
 
 //11)Question: Get a two-digit number from user and print sum the digits.
@@ -143,6 +153,7 @@ int main()
     d=b+c;
     printf("the sum is %d ",  d);
 }
+//=========================================================================================================================
 
 
 //12)Question: Get a three-digit number from user and print sum the digits.
@@ -161,9 +172,9 @@ int main()
     printf("b is %d",b);
     printf("c is %d",c);
     printf("d is %d",d);
-    
     printf("the sum is: %d",e);
 }
+//=========================================================================================================================
 
 
 //13)Question: Get a two-digit number from user and print the reverse of the number.
@@ -187,6 +198,7 @@ int main()
         
     }
 }
+//=========================================================================================================================
 
 
 //14)Question: Get a three-digit number from user and print the reverse of the number.
@@ -210,6 +222,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //15)Question: Get a four-digit number from user and only reverse the first two digits of the number, then print the number.
@@ -233,6 +246,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //16)Question: Get a four-digit number from user and only reverse the last two digits of the number, then print the number.
@@ -256,6 +270,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //17)Question: Get a two-digit number from user and make the one’s digit as 0, then print it.
@@ -277,6 +292,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //18)Question: Get a two-digit number from user and make the ten’s digit 1, then print it.
@@ -298,6 +314,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //19)Question: Get a three-digit number from user and make the one’s digit as 2, then print it.
@@ -319,6 +336,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //20)Question: Get a three-digit number from user and make the ten’s digit as 0, then print it.
@@ -341,6 +359,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //21)Question: Get a number from user and subtract 5 from that number if the number is odd, then print the result. Do not use “if”.
@@ -355,6 +374,7 @@ int main()
     res=num-(od*5);
     printf("The result is %d",res);
 }
+//=========================================================================================================================
 
 
 //22)Question: Get a number from user and subtract 5 from that number if the number’s ten’s position digit is odd, then print the result. Do not use “if”.
@@ -370,6 +390,7 @@ int main()
     res=num-(od*5);
     printf("The result is %d",res);
 }
+//=========================================================================================================================
 
 
 //23)Question: Get a two digit number from user and subtract 5 from that number if the sum of the digits of the number is odd, then print the result. Do not use “if”.
@@ -387,6 +408,7 @@ int main()
     res=num-(odd*5);
     printf("The result is %d",res);
 }
+//=========================================================================================================================
 
 
 //24)Question: Get a three-digit number from user and subtract 5 from that number if one’s digit number and 100’s digit number are same, then print the result. Do not use “if”.
@@ -403,6 +425,7 @@ int main()
     res=num-(eql*5);
     printf("The result is %d",res);
 }
+//=========================================================================================================================
 
 
 //25)Question: Get a four-digit number from user and subtract 5 from that number if ten’s digit position and 100’s digit position is same, then print the result. Do not use “if”.
@@ -419,6 +442,7 @@ int main()
     res=num-(eql*5);
     printf("The result is %d",res);
 }
+//=========================================================================================================================
 
 
 //26)Question: Get a two-digit number from user. If the sum of the digits is 10 then print “Success”, otherwise print “Failure”.
@@ -448,6 +472,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //27)Question: Get a three-digit number from user. If the sum of the digits is 10 then print “Success”, otherwise print “Failure”.
@@ -478,7 +503,8 @@ int main()
        printf("Enter the number correctly.");
     }
     }
-    
+//=========================================================================================================================
+
 
 //28)Question: Get a three-digit number from user. If the sum of the one’s digit and hundred’s digit is less than 10, then print “Success”, otherwise print “Failure”.
 //Example: Input: 569 - Output Failure. Input: 316 - Output: Success.
@@ -507,6 +533,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //29)Question: Get a four-digit number from user. If the sum of the ten’s digit and hundred’s digit is greater than 10, then print “Success”, otherwise print “Failure”.
@@ -536,6 +563,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //30)Question: Get a four-digit number from user. If the sum of the ten’s digit and hundred’s digit is equal to 10, and one of the digits is more than 7 then print “Success”, otherwise print “Failure”.
@@ -572,6 +600,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //31)Question: Get a three-digit number from user. If the sum of the digits is less than 10, then print the sum, otherwise add the digits of the sum. If the sum of the digits is less than 10, then print the sum, otherwise add the digits of the sum, and print the sum.
@@ -634,6 +663,7 @@ int main()
     }
     }
 }
+//=========================================================================================================================
 
 
 //32)Question: Get two 2-digit numbers from user. If the sum of the numbers is less than 100, then print the sum, otherwise print the difference.
@@ -670,6 +700,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //33)Question: Get two 2-digit numbers from user. Print the sum of digits of the biggest number.
@@ -704,6 +735,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //34)Question: Get two 3-digit numbers from user. Print the difference between the one’s digit and hundred’s digit of the number whose ten’s digit is bigger than the other number’s ten’s digit
@@ -756,6 +788,7 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
 
 
 //35)Question: Get two 3-digit numbers from user. Add the one’s and hundred’s digits of both the numbers. Print the sum of all the digits of the number whose sum of one’s and hundred’s digits is bigger.
@@ -793,3 +826,4 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+//=========================================================================================================================
