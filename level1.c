@@ -634,3 +634,162 @@ int main()
     }
     }
 }
+
+
+//32)Question: Get two 2-digit numbers from user. If the sum of the numbers is less than 100, then print the sum, otherwise print the difference.
+//Example: Input: 56 78 – Output: 22,Input: 14 65 - Output: 79
+#include<stdio.h>
+int main()
+{
+    int num1,num2,sum,diff;
+    printf("Enter the first two digit number:");
+    scanf("%d",&num1);
+    printf("Enter the second two digit number:");
+    scanf("%d",&num2);
+    if((-9<num1 && -9<num2 && num1<-100 && num2<-100)||(9<num1 && 9<num2 && num1<100 && num2<100))
+    {
+    sum=num1+num2;
+    if(sum<100)
+    {
+        printf("the sum is %d",sum);
+    }
+    else
+    {
+        if(num1>num2)
+        {
+            diff=num1-num2;
+        }
+        else{
+            diff=num2-num1;
+        }
+        printf("the difference is %d",diff);
+    }
+    }
+    else
+    {
+       printf("Enter the number correctly.");
+    }
+}
+
+
+//33)Question: Get two 2-digit numbers from user. Print the sum of digits of the biggest number.
+//Example: Input: 56 78 – Output: 15,Input: 14 65 - Output: 11
+#include<stdio.h>
+int main()
+{
+    int num1,num2,sum,one,ten;
+    printf("Enter the first two digit number:");
+    scanf("%d",&num1);
+    printf("Enter the second two digit number:");
+    scanf("%d",&num2);
+    if((-9<num1 && -9<num2 && num1<-100 && num2<-100)||(9<num1 && 9<num2 && num1<100 && num2<100))
+    {
+        if(num1>num2)
+    {
+        one=num1%10;
+        ten=num1/10;
+        sum=one+ten;
+        printf("the sum is %d",sum);
+    }
+        else
+    {
+        one=num2%10;
+        ten=num2/10;
+        sum=one+ten;
+        printf("the sum is %d",sum);
+    }
+    }
+    else
+    {
+       printf("Enter the number correctly.");
+    }
+}
+
+
+//34)Question: Get two 3-digit numbers from user. Print the difference between the one’s digit and hundred’s digit of the number whose ten’s digit is bigger than the other number’s ten’s digit
+//Example: Input: 856 978 – Output: 1,Input: 128 365 - Output: 2
+#include<stdio.h>
+int main()
+{
+    int num1, num2,ten1,ten2,one,hun,diff;
+    printf("Enter the first three digit number");
+    scanf("%d",&num1);
+    printf("Enter the second three digit number");
+    scanf("%d",&num2);
+     if((-99<num1 && -99<num2 && num1<-1000 && num2<-1000)||(99<num1 && 99<num2 && num1<1000 && num2<1000))
+    {
+        ten1=(num1%100)/10;
+        ten2=(num2%100)/10;
+        if(ten1>ten2)
+        {
+            one=num1%10;
+            hun=num1/100;
+            if(one>hun)
+            {
+                diff=one-hun;
+                printf("The result is %d",diff);
+            }
+            else
+            {
+                diff=hun-one;
+                printf("The result is %d",diff);
+            }
+        }
+        else
+        {
+            one=num2%10;
+            hun=num2/100;
+            if(one>hun)
+            {
+                diff=one-hun;
+                printf("The result is %d",diff);
+            }
+            else
+            {
+                diff=hun-one;
+                printf("The result is %d",diff);
+            }
+        }
+    }
+     else
+    {
+       printf("Enter the number correctly.");
+    }
+}
+
+
+//35)Question: Get two 3-digit numbers from user. Add the one’s and hundred’s digits of both the numbers. Print the sum of all the digits of the number whose sum of one’s and hundred’s digits is bigger.
+//Example: Input: 856 978 – Output: 24,Input: 128 365 - Output: 11
+#include<stdio.h>
+int main()
+{
+    int num1, num2,one1,one2,hun1,hun2,ten,sum1,sum2,sum;
+    printf("Enter the first three digit number");
+    scanf("%d",&num1);
+    printf("Enter the second three digit number");
+    scanf("%d",&num2);
+     if((-99<num1 && -99<num2 && num1<-1000 && num2<-1000)||(99<num1 && 99<num2 && num1<1000 && num2<1000))
+    {
+        one1=num1%10;
+        hun1=num1/100;
+        sum1=one1+hun1;
+        one2=num2%10;
+        hun2=num2/100;
+        sum2=one2+hun2;
+        if(sum1>sum2){
+            ten=(num1%100)/10;
+            sum=one1+ten+hun1;
+            printf("The sum is %d",sum);
+        }
+        else
+        {
+            ten=(num2%100)/10;
+            sum=one2+ten+hun2;
+            printf("The sum is %d",sum);
+        }
+    }
+     else
+    {
+       printf("Enter the number correctly.");
+    }
+}
