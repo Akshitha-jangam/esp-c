@@ -341,3 +341,296 @@ int main()
        printf("Enter the number correctly.");
     }
 }
+
+
+//21)Question: Get a number from user and subtract 5 from that number if the number is odd, then print the result. Do not use “if”.
+//Example: Input: 695 Output 690. Input: 182 Output: 182
+#include<stdio.h>
+int main()
+{
+    int num,od,res;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    od=num%2;
+    res=num-(od*5);
+    printf("The result is %d",res);
+}
+
+
+//22)Question: Get a number from user and subtract 5 from that number if the number’s ten’s position digit is odd, then print the result. Do not use “if”.
+//Example: Input: 685 Output 685. Input: 89172 Output: 89167
+#include<stdio.h>
+int main()
+{
+    int num,ten,od,res;
+    printf("Enter the number");
+    scanf("%d",&num);
+    ten=(num%100)/10;
+    od=(ten%2);
+    res=num-(od*5);
+    printf("The result is %d",res);
+}
+
+
+//23)Question: Get a two digit number from user and subtract 5 from that number if the sum of the digits of the number is odd, then print the result. Do not use “if”.
+//Example: Input: 95 Output 95. Input: 72 Output: 67
+#include<stdio.h>
+int main()
+{
+    int num,one,ten,sum,odd,res;
+    printf("Enter two digit number:");
+    scanf("%d",&num);
+    one=num%10;
+    ten=num/10;
+    sum=one+ten;
+    odd=sum%2;
+    res=num-(odd*5);
+    printf("The result is %d",res);
+}
+
+
+//24)Question: Get a three-digit number from user and subtract 5 from that number if one’s digit number and 100’s digit number are same, then print the result. Do not use “if”.
+//Example: Input: 595 Output 590. Input: 372 Output: 372
+#include<stdio.h>
+int main()
+{
+    int num,one,hun,eql,res;
+    printf("Enter the three digit number:");
+    scanf("%d",& num);
+    one=num%10;
+    hun=num/100;
+    eql=(one==hun);
+    res=num-(eql*5);
+    printf("The result is %d",res);
+}
+
+
+//25)Question: Get a four-digit number from user and subtract 5 from that number if ten’s digit position and 100’s digit position is same, then print the result. Do not use “if”.
+//Example: Input: 7595 Output 7595. Input: 3772 Output: 3767
+#include<stdio.h>
+int main()
+{
+    int num,ten,hun,eql,res;
+    printf("Enter the four digit number:");
+    scanf("%d",&num);
+    ten=(num%100)/10;
+    hun=(num%1000)/100;
+    eql=(ten==hun);
+    res=num-(eql*5);
+    printf("The result is %d",res);
+}
+
+
+//26)Question: Get a two-digit number from user. If the sum of the digits is 10 then print “Success”, otherwise print “Failure”.
+//Example: Input: 56 - Output Failure. Input: 37 - Output: Success.
+#include<stdio.h>
+int main()
+{
+    int num,one,ten,sum;
+    printf("Enter the two digit number:");
+    scanf("%d",&num);
+    if((-9<num&&num<-100)||(9<num&&num<100))
+    {
+        one=num%10;
+        ten=num/10;
+        sum=one+ten;
+        if(sum==10)
+        {
+            printf("IT IS SUCCESS");
+        }
+        else
+        {
+            printf("IT IS FAILURE");
+        }
+    }
+     else
+    {
+       printf("Enter the number correctly.");
+    }
+}
+
+
+//27)Question: Get a three-digit number from user. If the sum of the digits is 10 then print “Success”, otherwise print “Failure”.
+//Example: Input: 956 - Output Failure. Input: 127 - Output: Success.
+#include<stdio.h>
+int main()
+{
+    int num,one,ten,hun,sum;
+    printf("Enter the three digit number:");
+    scanf("%d",&num);
+    if((-99<num&&num<-1000)||(99<num&&num<1000))
+    {
+        one=num%10;
+        ten=(num%100)/10;
+        hun=num/100;
+        sum=one+ten+hun;
+        if(sum==10)
+        {
+            printf("IT IS A SUCCESS");
+        }
+        else
+        {
+            printf("IT IS A FAILURE");
+        }
+    }
+     else
+    {
+       printf("Enter the number correctly.");
+    }
+    }
+    
+
+//28)Question: Get a three-digit number from user. If the sum of the one’s digit and hundred’s digit is less than 10, then print “Success”, otherwise print “Failure”.
+//Example: Input: 569 - Output Failure. Input: 316 - Output: Success.
+#include<stdio.h>
+int main()
+{
+    int num,one,hun,sum;
+    printf("Enter the three digit number:");
+    scanf("%d",&num);
+    if((-99<num&&num<-1000)||(99<num&&num<1000))
+    {
+        one=num%10;
+        hun=num/100;
+        sum=one+hun;
+        if(sum<10)
+        {
+            printf("IT IS A SUCCESS");
+        }
+        else
+        {
+            printf("IT IS A FAILURE");
+        }
+    }
+     else
+    {
+       printf("Enter the number correctly.");
+    }
+}
+
+
+//29)Question: Get a four-digit number from user. If the sum of the ten’s digit and hundred’s digit is greater than 10, then print “Success”, otherwise print “Failure”.
+//Example: Input: 7529 – Output: Failure. Input: 9386 - Output: Succes.
+#include<stdio.h>
+int main()
+{
+    int num,ten,hun,sum;
+    printf("Enter the four digit number:");
+    scanf("%d",&num);
+    if((-999<num&&num<-10000)||(999<num&&num<10000))
+    {
+        ten=(num%100)/10;
+        hun=(num%1000)/100;
+        sum=ten+hun;
+        if(sum>10)
+        {
+            printf("IT IS A SUCCESS");
+        }
+        else
+        {
+            printf("IT IS A FAILURE");
+        }
+    }
+     else
+    {
+       printf("Enter the number correctly.");
+    }
+}
+
+
+//30)Question: Get a four-digit number from user. If the sum of the ten’s digit and hundred’s digit is equal to 10, and one of the digits is more than 7 then print “Success”, otherwise print “Failure”.
+//Example: Input: 4649 – Output: Failure. Input: 9286 - Output: Succes.
+#include<stdio.h>
+int main()
+{
+    int num,ten,hun,sum;
+    printf("Enter the four digit number:");
+    scanf("%d",&num);
+    if((-999<num&&num<-10000)||(999<num&&num<10000))
+    {
+        ten=(num%100)/10;
+        hun=(num%1000)/100;
+        sum=ten+hun;
+        if(sum=10 )
+        {
+            if(ten>7||hun>7)
+            {
+                 printf("IT IS A SUCCESS");
+            }
+             else
+            {
+            printf("IT IS A FAILURE");
+            }
+        }
+        else
+        {
+            printf("IT IS A FAILURE");
+        }
+    }
+     else
+    {
+       printf("Enter the number correctly.");
+    }
+}
+
+
+//31)Question: Get a three-digit number from user. If the sum of the digits is less than 10, then print the sum, otherwise add the digits of the sum. If the sum of the digits is less than 10, then print the sum, otherwise add the digits of the sum, and print the sum.
+//Note: The result should be always single digit only.
+//Example: Input: 123 – Output: 6
+//Input: 149 - Output: 5 (149:1+4+9 = 14: 1+4 = 5)
+//Input: 991 - Output: 1 (991: 9+9+1 = 19: 1+9 = 10: 1+0 = 1)
+#include<stdio.h>
+int main()
+{
+    int num,one,ten,hun,sum,one1,ten1,sum1,one2,ten2,sum2;
+    printf("Enter the three digit number:");
+    scanf("%d",&num);
+    if((-99<num&&num<-1000)||(99<num&&num<1000))
+    {
+        one=num%10;
+        ten=(num%100)/10;
+        hun=num/100;
+        sum=one+ten+hun;
+        if(sum<10)
+        {
+            printf("The sum is %d",sum);
+        }
+        else if(sum>10)
+        {
+           one1=sum%10;
+           ten1=sum/10;
+           sum1=one1+ten1;
+           if(sum1<10)
+           {
+                printf("The sum is %d",sum1);
+           }
+           else if(sum1==10){
+               one2=sum1%10;
+               ten2=sum1/10;
+               sum2=one2+ten2;
+               printf("The sum is %d",sum2);
+           }
+            else if(sum1>10)
+        {
+            one2=sum1%10;
+           ten2=sum1/10;
+           sum2=one2+ten2;
+           printf("The sum is %d",sum2);
+        
+        }
+        }
+        else if(sum==10)
+        {
+            one1=sum%10;
+           ten1=sum/10;
+           sum1=one1+ten1;
+           printf("The sum is %d",sum1);
+        }
+        
+    
+     else
+    {
+       printf("Enter the number correctly.");
+    }
+    }
+}
