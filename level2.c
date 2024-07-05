@@ -227,3 +227,22 @@ int main()
 //===========================================================================================================================================
 
 
+//11)Question: Write a program to get a number from user print the total number of digits in that number
+//Answer: Input : 123456 - Output – 6
+//Input : 76895439- Output – 8
+//Input : 675 – Output - 3
+#include<stdio.h>
+int main()
+{
+    int num,count=0,s=0,r=0,total;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    loop: if(num!=0)
+    {
+      num =num/10;
+      count++;
+      goto loop;
+    }
+    printf("%d",count);
+    }
+//===========================================================================================================================================
