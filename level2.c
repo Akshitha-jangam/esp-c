@@ -270,3 +270,25 @@ int main()
 //===========================================================================================================================================
 
 
+//13)Question: Write a program to get a number from user and print the reverse of that number
+//Answer: Input : 123456 - Output – 654321
+//Input : 76895439- Output – 93459867
+//Input : 675 – Output - 576
+#include<stdio.h>
+int main()
+{
+    int num,rem,sum=0;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    loop: if(num!=0)
+    {
+        rem=num%10;
+        sum=(sum*10)+rem;
+        num=num/10;
+        goto loop;
+    }
+    printf("%d",sum);
+}
+//===========================================================================================================================================
+
+
