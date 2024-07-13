@@ -477,3 +477,42 @@ int main()
 //===========================================================================================================================================
 
 
+//19)Question: Write a program to get a 4-digit number from user, print whether that number’s middle two digits (hundred’s digit and ten’s digit) is prime.
+//Answer: Input: 6359 - Output: Not Prime
+//Input: 3517 - Output: Prime
+#include<stdio.h>
+int main()
+{
+    int num,dig,i=2,count=1;
+    printf("Enter the four digit number:");
+    scanf("%d",&num);
+    if((-999<num&&num<-10000)||(999<num&&num<10000))
+    {
+        dig=(num/10)%100;
+         loop:
+         if(i<dig)
+         {
+             if(dig%i==0)
+             {
+                 count++;
+            }
+                 i++;
+                 goto loop;
+        }
+             if(count==1)
+             {
+                 printf("prime");
+             }
+             else
+             {
+                 printf("not prime");
+             }
+    }
+    else
+    {
+       printf("Enter the number correctly.");
+    }
+}
+//===========================================================================================================================================
+
+
