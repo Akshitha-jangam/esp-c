@@ -292,3 +292,35 @@ int main()
 //===========================================================================================================================================
 
 
+//14)Question: Write a program to get a number from user and interchange the first and last digits and print the result.
+//Answer: Input : 123456 - Output – 623451
+//Input : 76895439- Output – 96895437
+//Input : 675 – Output - 576
+#include<stdio.h>
+int main()
+{
+    int num,fir,las,res,rim,rev=0,fre,rem,rim1,rev1=0,res1;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    las=num%10;
+    fre=num/10;
+   loop:
+    if(fre!=0){
+        rim=fre%10;
+        rev=(rev*10)+rim;
+        fre=fre/10;
+        goto loop;
+    }
+    fir=rev%10;
+    rem=rev/10;
+    res=(rem*10)+las;
+    loop1:
+    if(res!=0){
+        rim1=res%10;
+        rev1=(rev1*10)+rim1;
+        res=res/10;
+        goto loop1;
+    }
+    res1=(rev1*10)+fir;
+    printf("%d",res1);
+}
