@@ -324,3 +324,76 @@ int main()
     res1=(rev1*10)+fir;
     printf("%d",res1);
 }
+//===========================================================================================================================================
+
+
+//15)Question: Write a program to get a number from user and if the last digit of the number is even print the same number. If the last digit of the number is odd then subtract 1 from the last digit and print the number.(Note: Last digit -MSB)
+//Answer: Input : 123456 - Output – 123456
+//Input : 96895439- Output – 76895439
+//Input : 675 – Output - 575
+#include<stdio.h>
+int main()
+{
+    int num,sum1=0,sum2=0,rev1=0,rim1,rim2,rev2=0,one,res1,res2;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    res1=num;
+    one=num%10;
+    if(one%2!=0){
+        loop:
+        if(num!=0){
+            rim1=num%10;
+            rev1=(rev1*10)+rim1;
+            num=num/10;
+            goto loop;
+            }
+            res2=rev1-1;
+            loop1:
+            if(res2!=0){
+                rim2=res2%10;
+                rev2=(rev2*10)+rim2;
+                res2=res2/10;
+                goto loop1;
+                }
+                printf("%d",rev2);
+                }
+    else
+    {
+        printf("%d",num);
+        }
+ }
+//===========================================================================================================================================
+
+
+//16)Question: Write a program get number from user print whether that number is prime or not.
+//Answer: Input : 31 - Output : Prime
+//Input : 27 - Output : Not Prime.
+#include<stdio.h>
+int main()
+{
+    int num,i=2,j=1;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    loop:
+    if(i<num)
+    {
+        if(num%i==0)
+        {
+            j++;
+        }
+        i++;
+        goto loop;
+
+    }
+    if(j==1)
+    {
+        printf("prime");
+    }
+    else
+    {
+        printf("not prime");
+    }
+}
+//===========================================================================================================================================
+
+
