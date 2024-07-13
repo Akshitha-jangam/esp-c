@@ -371,7 +371,7 @@ int main()
 #include<stdio.h>
 int main()
 {
-    int num,i=2,j=1;
+    int num,i=2,count=1;
     printf("Enter the number:");
     scanf("%d",&num);
     loop:
@@ -379,13 +379,93 @@ int main()
     {
         if(num%i==0)
         {
-            j++;
+            count++;
         }
         i++;
         goto loop;
 
     }
-    if(j==1)
+    if(count==1)
+    {
+        printf("prime");
+    }
+    else
+    {
+        printf("not prime");
+    }
+}
+//===========================================================================================================================================
+
+
+//17)Question: Write a program to get a number from user, print whether that number is prime, and sum of digit is equal to 14.
+//Answer: Input: 59 - Output: Prime & Sum of Digits is 14
+//Input: 77 - Output: Not Prime but sum of digits is 14
+//Input: 13 - Output: Prime, but sum of Digits is not 14
+ #include<stdio.h>
+ int main()
+ {
+    int num,i=2,count=1,sum=0,digit;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    loop:
+    if(i<num)
+    {
+        if(num%i==0)
+        {
+            count++;
+        }
+        i++;
+        goto loop;
+    }
+    loop1:
+    if(num!=0)
+    {
+        digit=num%10;
+        sum=sum+digit;
+        num=num/10;
+        goto loop1;
+    }
+    if(count==1&&sum==14)
+    {
+        printf("prime and sum of digits is 14");
+    }
+    else if(count==1&&sum!=14)
+    {
+        printf("prime but sum of digits is not 14");
+    }
+    else if(count!=1&&sum==14)
+    {
+        printf("not a prime but sum of digits is 14");
+    }
+    else if(count!=1&&sum!=14)
+    {
+        printf("not a prime and sum of digits is not 14");
+    }
+ }
+//===========================================================================================================================================
+
+
+//18)Question: Write a program to get number from user, print whether that number’s first two digits (ten’s digits and one’s digit) is prime.
+//Answer: Input: 359 - Output: Prime
+//Input: 3577 - Output: Not Prime
+#include<stdio.h>
+int main()
+{
+    int num,dig,count=1,i=2;
+    printf("Enter the number");
+    scanf("%d",&num);
+    dig=num%100;
+    loop:
+    if(i<dig)
+    {
+        if(dig%i==0)
+        {
+            count++;
+        }
+        i++;
+        goto loop;
+    }
+    if(count==1)
     {
         printf("prime");
     }
