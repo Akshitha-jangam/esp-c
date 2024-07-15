@@ -516,3 +516,37 @@ int main()
 //===========================================================================================================================================
 
 
+//20)Question: Write a program print total number of single digit Prime numbers
+//Answer: 4
+#include <stdio.h>
+
+int main() {
+    int num = 2,total = 0,i,count;
+loop:
+    if (num < 10) {
+        i = 1;
+        count = 0;
+        
+    loop1:
+        if (i <= num) {
+            if (num % i == 0) {
+                count++;
+            }
+            i++;
+            goto loop1;
+        }
+        
+        if (count == 2) {
+            total++;
+        }
+        
+        num++;
+        goto loop;
+    }
+    
+    printf("%d",total);
+    return 0;
+}
+//===========================================================================================================================================
+
+
