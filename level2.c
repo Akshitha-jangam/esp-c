@@ -550,3 +550,58 @@ loop:
 //===========================================================================================================================================
 
 
+//21)Question: Write a program get number from user print the total number digits which are odd in the number.
+//Answer: Input : 12345678 - Output : 4
+//Input : 987531 - Output : 5
+#include<stdio.h>
+int main()
+{
+    int num,odd,sum=0,rem;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    loop: 
+    if(num!=0)
+    {
+        rem=num%10;
+        odd=rem%2;
+        if(odd!=0)
+        {
+            sum++;
+        }
+        num=num/10;
+        goto loop;
+    }
+    printf("%d",sum);
+}
+//===========================================================================================================================================
+
+
+//22)Question: Write a program get number from user print the total number of two-digit odd numbers in the number.
+//Answer: Input: 12345678 - Output: 3
+//Input: 987531 - Output: 4
+#include<stdio.h>
+int main()
+{
+    int num,rem,sum=0,odd;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    loop:
+    if(num!=0)
+    {
+        rem=num%100;
+        odd=rem%2;
+        if(rem>9&&rem<100)
+        {
+            if(odd!=0)
+        {
+            sum++;
+        }
+        }
+        num=num/10;
+        goto loop;
+    }
+    printf("%d",sum);
+}
+//===========================================================================================================================================
+
+
