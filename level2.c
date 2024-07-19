@@ -605,3 +605,77 @@ int main()
 //===========================================================================================================================================
 
 
+//23)Question: Write a program get number from user print the total number of single-digit perfect square numbers in the number.
+//Answer: Input: 123456789 - Output: 3
+//Input: 987531 - Output: 2
+#include <stdio.h>
+
+int main() {
+    int num, rem, count = 0, num1;
+    printf("Enter the number:");
+    scanf("%d", &num);
+
+loop:
+if (num!=0)
+{
+    rem =num%10;
+    num1=0;
+    loop1:
+    if (num1*num1==rem)
+    {
+        count++;
+        goto loop2;
+    }
+    num1++;
+    if (num1*num1<=rem)
+    {
+        goto loop1;
+    }
+    loop2:
+        num=num/10;
+        goto loop;
+    }
+    printf("%d", count);
+    return 0;
+}
+//===========================================================================================================================================
+
+
+//24)Question: Write a program get number from user print the total number of two-digit perfect square numbers in the number.
+//Answer: Input: 163496481 - Output: 4
+//Input: 364925 - Output: 4
+#include<stdio.h>
+int main()
+{
+    int num, rem, count = 0, num1;
+    printf("Enter the number:");
+    scanf("%d", &num);
+
+loop:
+if (num!=0)
+{
+    rem =num%100;
+    num1=0;
+    if(rem<100&&rem>9){
+    loop1:
+    if (num1*num1==rem)
+    {
+        count++;
+        goto loop2;
+    }
+    num1++;
+    if (num1*num1<=rem)
+    {
+        goto loop1;
+    }
+    loop2:
+        num=num/10;
+        goto loop;
+    }
+}
+    printf("%d", count);
+    return 0;
+}
+//===========================================================================================================================================
+
+
