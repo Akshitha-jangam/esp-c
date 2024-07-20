@@ -679,3 +679,64 @@ if (num!=0)
 //===========================================================================================================================================
 
 
+//25)Question: Write a program get number from user print the total number of single-digit prime numbers in the number.
+//Answer: Input: 163496481 - Output: 1
+//Input: 364925 - Output: 3
+#include <stdio.h>
+
+int main() {
+    int num,rem,count=0,num1,prm;
+    printf("Enter the number:");
+    scanf("%d",&num);
+    loop:
+    if(num!=0) 
+    {
+        rem=num%10;
+        num1=2;
+        prm=1;
+        loop1:
+        if(num1<rem) 
+        {
+            if(rem%num1==0) 
+            {
+                prm=0;
+                goto loop2;
+            }
+            num1++;
+            goto loop1;
+        }
+        loop2:
+        if(rem>1&&prm==1) 
+        {
+            count++;
+        }
+        num= num/10;
+        goto loop;
+    }
+
+    printf("%d",count);
+}
+//===========================================================================================================================================
+
+
+//26)Question: Write a program to print biggest 4-digit number which is divisible by 7 and 9.
+#include<stdio.h>
+int main()
+{
+    int num=1000,sev,nin;
+    loop:
+    if(num>999&&num<10000)
+    {
+        sev=num%7;
+        nin=num%9;
+        if(sev==0&&nin==0)
+        {
+            printf("%d\n",num);
+        }
+        num++;
+        goto loop;
+    }
+}
+//===========================================================================================================================================
+
+
